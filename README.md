@@ -18,7 +18,7 @@ npm install listloading
 
 ## 使用方法如下：
 
-###1、html结构
+##1、html结构
 ```html
 <div id="listloading">
     <div>
@@ -26,7 +26,7 @@ npm install listloading
     </div>
 </div>
 ```
-与iscroll创建的结构一样，但是指定的创建的元素节点必须指定ID，因为在组件里面发布订阅模式需要做一个标识。因为iscroll在节点元素创建之前，必须先设定高度，否则会导致无法滚动；iscroll创建完毕是指定给第一个子元素滚动，所以listloading的上拉和下拉刷新也是追加到第一个子元素里面，其实把第一个子元素想象成为html里面的body就可以了。
+与iscroll创建的结构一样，但是指定的创建的元素节点必须指定ID，因为在组件里面发布订阅模式需要做一个标识。因为iscroll在节点元素创建之前，     必须先设定高度，否则会导致无法滚动；iscroll创建完毕是指定给第一个子元素滚动，所以listloading的上拉和下拉刷新也是追加到    第一个子元素     里面，其实把第一个子元素想象成为html里面的body就可以了。
 
 
 ###2、需要引入的js
@@ -89,7 +89,10 @@ var listloading = new Listloading('#listloading', {
     }
 });
 
+
+
 // 点击事件
+//evt这个是什么意思呢
 listloading.evt('li', 'click', function (dom) {
     dom.remove();
     // $('#order-list').append(createHtml());
